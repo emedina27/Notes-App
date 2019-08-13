@@ -1,7 +1,6 @@
 const  getNotes =  require('./notes.js')
+const yargs = require('yargs')
 const chalk = require ('chalk')
-const msg = getNotes()
-
 
 
 //customize yargs version
@@ -58,11 +57,10 @@ yargs.command({
 
 
 //add, remove, read, list
-//console.log(yargs.argv)
+console.log(yargs.argv)
 
-yargs.parse()
+//yargs.parse()
         
-
 
 
 
