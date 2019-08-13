@@ -1,9 +1,18 @@
 const  getNotes =  require('./notes.js')
 const chalk = require ('chalk')
-const msg = getNotes()
 
-console.log(msg)
-console.log(chalk.green.bold.underline("Hello Beautiful People"))
+
+const command = process.argv[2]
+
+if (command === 'add') {
+
+    console.log(process.argv)
+}
+else if ( command === 'remove'){
+   
+    console.log('removing note')
+        
+}
 
 
 
