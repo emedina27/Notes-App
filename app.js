@@ -17,9 +17,15 @@ yargs.command({
             demandOption: true,
             type: 'string'
         } 
+    },      body:{
+               describe: 'note body',
+               demandOption: true,
+               type: 'string'
+
     },
     handler: function (argv) {
-    console.log('adding a note', argv )
+        console.log('Title: ' + argv.title )
+        console.log('Body:  ' + argv.body )
     }
 })
 
@@ -45,14 +51,15 @@ yargs.command({
      command: 'Read',
     describe: 'Read  a  note',
     handler: function () {
-    console.log('Reading notes')
+    console.log('reading a note')
     }
 })
 
 
 //add, remove, read, list
-console.log(yargs.argv)
+//console.log(yargs.argv)
 
+yargs.parse()
         
 
 
